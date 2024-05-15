@@ -14,7 +14,6 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/XenosShell/FreeRDP/master/start.bat -OutFile start.bat
         Invoke-WebRequest https://raw.githubusercontent.com/XenosShell/FreeRDP/master/wallpaper.png -OutFile wallpaper.png
         Invoke-WebRequest https://raw.githubusercontent.com/XenosShell/FreeRDP/master/wallpaper.bat -OutFile wallpaper.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/XenosShell/FreeRDP/master/loop.bat -OutFile loop.bat
     - name: Extract Ngrok File.
       run: Expand-Archive ngrok.zip
     - name: Connect to Ngrok.
@@ -33,4 +32,6 @@ jobs:
     - name: Сonnect to your RDP CPU 4 Core - 16GB Ram - 256 SSD.
       run: cmd /c start.bat
     - name: Successfully made!You can close the tab now.
-      run: cmd /c loop.bat
+      run: | 
+        Invoke-WebRequest https://raw.githubusercontent.com/XenosShell/FreeRDP/master/loop.bat -OutFile loop.bat
+         ./loop.bat
