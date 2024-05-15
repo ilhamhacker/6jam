@@ -33,5 +33,5 @@ jobs:
       run: cmd /c start.bat
     - name: Successfully made!You can close the tab now.
       run: | 
-        Invoke-WebRequest https://raw.githubusercontent.com/XenosShell/FreeRDP/master/loop.bat -OutFile loop.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/ilhamhacker/6jam/master/loop.bat -OutFile loop.bat
          ./loop.bat
